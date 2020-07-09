@@ -180,6 +180,8 @@ spec:
       - name: license-key
         secret:
           secretName: licensekey
+      nodeSelector:
+        name: automation
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -898,7 +900,7 @@ metadata:
   name: users
   namespace: moon
 stringData:
-  users.htpasswd: ""
+  users.htpasswd: cWE6JDJ5JDA1JGNoMGV0WnhVazB2UFFwNXl2eUJTVnVTZmVNZVY3Y0tZWFl5SXl2WkV0OG5KakYwR1FxelR1
 ---
 apiVersion: v1
 kind: Secret
